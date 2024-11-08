@@ -1,0 +1,174 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7eb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #00f5cc;
+    color: #ffffff;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-home {
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.icon-home:hover {
+    color: #f7f7eb;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Estilos para el cuerpo de la página */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos del contenedor del resumen de pedido */
+.resumen-pedido {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.resumen-pedido h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 24px;
+}
+
+.resumen-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+
+.resumen-item span {
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.resumen-item span:last-child {
+    text-align: right;
+}
+
+.total {
+    border-top: 2px solid #ddd;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.actions {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Botón de acción */
+.button {
+    background-color: #4688cb;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #357ab8;
+}
+
+/* Media Queries para hacer la página responsiva */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    .resumen-pedido {
+        padding: 1rem;
+        box-shadow: none;
+        background-color: #f9f9f9;
+    }
+
+    .resumen-item {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+    }
+
+    .total {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resumen-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .resumen-item span {
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    .resumen-item span:last-child {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .total {
+        text-align: left;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .total {
+        font-size: 16px;
+    }
+}

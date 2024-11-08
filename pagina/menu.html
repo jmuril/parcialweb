@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de la Canasta Familiar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <a href="#" class="icon-home">
+            <i class="fas fa-home"></i>
+        </a>
+        <h1>Productos de la Canasta Familiar</h1>
+        <div class="shopping-cart-icon" id="shopping-cart-icon">
+            <i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <form id="menu-form" class="product-list">
+            <!-- Producto: Arroz -->
+            <div class="product-card">
+                <img src="/pagina/img/arroz.jpeg" alt="Arroz" class="product-image">
+                <h3>Arroz 1kg</h3>
+                <p>Arroz blanco de grano largo</p>
+                <span class="price">$3.000 COL</span>
+                <div class="quantity-selector">
+                    <label for="cantidad-arroz">Cantidad:</label>
+                    <input type="number" id="cantidad-arroz" name="cantidad-arroz" min="1" value="1">
+                </div>
+                <button type="button" class="add-to-cart" data-product="Arroz 1kg" data-price="3000">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto: Frijoles -->
+            <div class="product-card">
+                <img src="/pagina/img/frijoles.jpeg" alt="Frijoles" class="product-image">
+                <h3>Frijoles 500g</h3>
+                <p>Frijoles rojos secos</p>
+                <span class="price">$4.500 COL</span>
+                <div class="quantity-selector">
+                    <label for="cantidad-frijoles">Cantidad:</label>
+                    <input type="number" id="cantidad-frijoles" name="cantidad-frijoles" min="1" value="1">
+                </div>
+                <button type="button" class="add-to-cart" data-product="Frijoles 500g" data-price="4500">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto: Aceite -->
+            <div class="product-card">
+                <img src="/pagina/img/aceite.jpeg" alt="Aceite" class="product-image">
+                <h3>Aceite de Cocina 1L</h3>
+                <p>Aceite vegetal</p>
+                <span class="price">$6.000 COL</span>
+                <div class="quantity-selector">
+                    <label for="cantidad-aceite">Cantidad:</label>
+                    <input type="number" id="cantidad-aceite" name="cantidad-aceite" min="1" value="1">
+                </div>
+                <button type="button" class="add-to-cart" data-product="Aceite de Cocina 1L" data-price="6000">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto: Huevos -->
+            <div class="product-card">
+                <img src="/pagina/img/huevos.jpeg" alt="Huevos" class="product-image">
+                <h3>Huevos (docena)</h3>
+                <p>Huevos frescos</p>
+                <span class="price">$5.500 COL</span>
+                <div class="quantity-selector">
+                    <label for="cantidad-huevos">Cantidad:</label>
+                    <input type="number" id="cantidad-huevos" name="cantidad-huevos" min="1" value="1">
+                </div>
+                <button type="button" class="add-to-cart" data-product="Huevos (docena)" data-price="5500">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto: Azúcar -->
+            <div class="product-card">
+                <img src="/pagina/img/azucar.jpeg" alt="Azúcar" class="product-image">
+                <h3>Azúcar 1kg</h3>
+                <p>Azúcar blanca refinada</p>
+                <span class="price">$2.800 COL</span>
+                <div class="quantity-selector">
+                    <label for="cantidad-azucar">Cantidad:</label>
+                    <input type="number" id="cantidad-azucar" name="cantidad-azucar" min="1" value="1">
+                </div>
+                <button type="button" class="add-to-cart" data-product="Azúcar 1kg" data-price="2800">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto: Manzanas -->
+            <div class="product-card">
+                <img src="/pagina/img/manzanas.jpeg" alt="Manzanas" class="product-image">
+                <h3>Manzanas (kg)</h3>
+                <p>Manzanas frescas rojas</p>
+                <span class="price">$4.000 COL</span>
+                <div class="quantity-selector">
+                    <label for="cantidad-manzanas">Cantidad:</label>
+                    <input type="number" id="cantidad-manzanas" name="cantidad-manzanas" min="1" value="1">
+                </div>
+                <button type="button" class="add-to-cart" data-product="Manzanas (kg)" data-price="4000">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto: Plátanos -->
+            <div class="product-card">
+                <img src="/pagina/img/platanos.jpeg" alt="Plátanos" class="product-image">
+                <h3>Plátanos (unidad)</h3>
+                <p>Plátanos verdes</p>
+                <span class="price">$1.200 COL</span>
+                <div class="quantity-selector">
+                    <label for="cantidad-platanos">Cantidad:</label>
+                    <input type="number" id="cantidad-platanos" name="cantidad-platanos" min="1" value="1">
+                </div>
+                <button type="button" class="add-to-cart" data-product="Plátanos (unidad)" data-price="1200">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto: Papas -->
+            <div class="product-card">
+                <img src="/pagina/img/papas.jpeg" alt="Papas" class="product-image">
+                <h3>Papas (kg)</h3>
+                <p>Papas frescas para cocción</p>
+                <span class="price">$2.500 COL</span>
+                <div class="quantity-selector">
+                    <label for="cantidad-papas">Cantidad:</label>
+                    <input type="number" id="cantidad-papas" name="cantidad-papas" min="1" value="1">
+                </div>
+                <button type="button" class="add-to-cart" data-product="Papas (kg)" data-price="2500">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto: Tomates -->
+            <div class="product-card">
+                <img src="/pagina/img/tomates.jpeg" alt="Tomates" class="product-image">
+                <h3>Tomates (kg)</h3>
+                <p>Tomates frescos</p>
+                <span class="price">$3.000 COL</span>
+                <div class="quantity-selector">
+                    <label for="cantidad-tomates">Cantidad:</label>
+                    <input type="number" id="cantidad-tomates" name="cantidad-tomates" min="1" value="1">
+                </div>
+                <button type="button" class="add-to-cart" data-product="Tomates (kg)" data-price="3000">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto: Zanahorias -->
+            <div class="product-card">
+                <img src="/pagina/img/zanahorias.jpeg" alt="Zanahorias" class="product-image">
+                <h3>Zanahorias (kg)</h3>
+                <p>Zanahorias frescas</p>
+                <span class="price">$2.200 COL</span>
+                <div class="quantity-selector">
+                    <label for="cantidad-zanahorias">Cantidad:</label>
+                    <input type="number" id="cantidad-zanahorias" name="cantidad-zanahorias" min="1" value="1">
+                </div>
+                <button type="button" class="add-to-cart" data-product="Zanahorias (kg)" data-price="2200">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto: Leche -->
+            <div class="product-card">
+                <img src="/pagina/img/leche.jpeg" alt="Leche" class="product-image">
+                <h3>Leche Entera 1L</h3>
+                <p>Leche pasteurizada</p>
+                <span class="price">$3.500 COL</span>
+                <div class="quantity-selector">
+                    <label for="cantidad-leche">Cantidad:</label>
+                    <input type="number" id="cantidad-leche" name="cantidad-leche" min="1" value="1">
+                </div>
+                <button type="button" class="add-to-cart" data-product="Leche Entera 1L" data-price="3500">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto: Pastas -->
+            <div class="product-card">
+                <img src="/pagina/img/pastas.jpeg" alt="Pastas" class="product-image">
+                <h3>Pastas 500g</h3>
+                <p>Espaguetis</p>
+                <span class="price">$2.500 COL</span>
+                <div class="quantity-selector">
+                    <label for="cantidad-pastas">Cantidad:</label>
+                    <input type="number" id="cantidad-pastas" name="cantidad-pastas" min="1" value="1">
+                </div>
+                <button type="button" class="add-to-cart" data-product="Pastas 500g" data-price="2500">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto: Sal -->
+            <div class="product-card">
+                <img src="/pagina/img/sal.jpeg" alt="Sal" class="product-image">
+                <h3>Sal 1kg</h3>
+                <p>Sal refinada</p>
+                <span class="price">$1.000 COL</span>
+                <div class="quantity-selector">
+                    <label for="cantidad-sal">Cantidad:</label>
+                    <input type="number" id="cantidad-sal" name="cantidad-sal" min="1" value="1">
+                </div>
+                <button type="button" class="add-to-cart" data-product="Sal 1kg" data-price="1000">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto: Café -->
+            <div class="product-card">
+                <img src="/pagina/img/cafe.jpeg" alt="Café" class="product-image">
+                <h3>Café 500g</h3>
+                <p>Café molido</p>
+                <span class="price">$9.000 COL</span>
+                <div class="quantity-selector">
+                    <label for="cantidad-cafe">Cantidad:</label>
+                    <input type="number" id="cantidad-cafe" name="cantidad-cafe" min="1" value="1">
+                </div>
+                <button type="button" class="add-to-cart" data-product="Café 500g" data-price="9000">Agregar al carrito</button>
+            </div>
+
+        </form>
+    </main>
+
+    <script src="/compra/script.js"></script>
+</body>
+</html>
